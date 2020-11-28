@@ -16,7 +16,7 @@ _position = getPosATL _constructionObject;
 _vectorDirection = vectorDir _constructionObject;
 _vectorUp = vectorUp _constructionObject;
 _territoryFlag = _constructionObject call ExileClient_util_world_getTerritoryAtPosition;
-_territoryID = if (isNull _territoryFlag) then { 'NULL' } else  { _territoryFlag getVariable ["ExileDatabaseID", 'NULL']};
+_territoryID = if (isNull _territoryFlag) then { '' } else  { _territoryFlag getVariable ["ExileDatabaseID", 'NULL']};
 _data =
 [
 	typeOf _constructionObject,
